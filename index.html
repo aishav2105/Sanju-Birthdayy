@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjay's 26th Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOGIN PAGE -->
+  <section id="loginPage" class="login-page">
+    <div class="login-card">
+      <div class="cake-icon">🎂</div>
+      <h1>Birthday Access</h1>
+      <p>Enter the secret birthday password</p>
+
+      <input 
+        type="password" 
+        id="passwordInput" 
+        placeholder="DD-MM-YYYY"
+      />
+
+      <button id="loginBtn">Unlock Surprise</button>
+      <p id="errorMsg"></p>
+    </div>
+  </section>
+
+  <!-- MAIN WEBSITE -->
+  <main id="mainPage" class="hidden">
+
+    <button id="musicBtn" class="music-btn">🎵 Music</button>
+    <audio id="bgMusic" loop>
+      <source src="" type="audio/mpeg">
+    </audio>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="badge">🎉 26th Birthday Celebration 🎉</p>
+        <h1>Happy Birthday, <span>Sanjay</span>!</h1>
+        <p class="hero-text">
+          Today is all about celebrating you, your journey, your smile,
+          your memories, and the amazing person you are becoming.
+        </p>
+
+        <div class="countdown-box">
+          <h3>Countdown to the Big Day</h3>
+          <div id="countdown" class="countdown">
+            <div><span id="days">00</span><small>Days</small></div>
+            <div><span id="hours">00</span><small>Hours</small></div>
+            <div><span id="minutes">00</span><small>Minutes</small></div>
+            <div><span id="seconds">00</span><small>Seconds</small></div>
+          </div>
+        </div>
+
+        <button id="surpriseBtn" class="primary-btn">Open Birthday Wish 🎁</button>
+      </div>
+    </section>
+
+    <!-- MEMORY TIMELINE -->
+    <section class="timeline-section">
+      <h2>Beautiful Memories with Sanjay</h2>
+      <p class="section-subtitle">10 special moments, one unforgettable person.</p>
+
+      <div class="timeline">
+
+        <div class="memory-card">
+          <img src="images/f1ae24a4-35ce-4c9c-8f04-02a76f4ac44a.jpg" alt="Memory 1">
+          <h3>Memory 01</h3>
+          <p>A moment filled with smiles and happiness.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo2.jpg" alt="Memory 2">
+          <h3>Memory 02</h3>
+          <p>A day that became a beautiful memory.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo3.jpg" alt="Memory 3">
+          <h3>Memory 03</h3>
+          <p>Good times, good people, and good vibes.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo4.jpg" alt="Memory 4">
+          <h3>Memory 04</h3>
+          <p>A memory worth keeping forever.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo5.jpg" alt="Memory 5">
+          <h3>Memory 05</h3>
+          <p>One of those moments that always stays close.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo6.jpg" alt="Memory 6">
+          <h3>Memory 06</h3>
+          <p>Every picture tells a happy story.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo7.jpg" alt="Memory 7">
+          <h3>Memory 07</h3>
+          <p>A special moment from a special journey.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo8.jpg" alt="Memory 8">
+          <h3>Memory 08</h3>
+          <p>Friends, laughter, and unforgettable memories.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo9.jpg" alt="Memory 9">
+          <h3>Memory 09</h3>
+          <p>A picture full of happiness.</p>
+        </div>
+
+        <div class="memory-card">
+          <img src="images/photo10.jpg" alt="Memory 10">
+          <h3>Memory 10</h3>
+          <p>The journey continues with more beautiful memories.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WISH SECTION -->
+    <section class="wish-section">
+      <div class="wish-card">
+        <h2>My Dear,</h2>
+        <p>
+          Happy 26th Birthday Sanjumaaa! May this year bring you success, peace,
+          happiness, new opportunities, strong friendships, and countless
+          reasons to smile. Keep growing, keep shining, and keep being the
+          amazing person you are.
+        </p>
+        <h3>With love and best wishes My Man!❤️</h3>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ for Sanjay's 26th Birthday</p>
+    </footer>
+
+  </main>
+
+  <!-- SURPRISE MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close-btn">×</button>
+      <h2>🎁 Surprise Wish</h2>
+      <p>
+        Sanjay, turning 26 is not just another birthday.
+        It is another chapter of dreams, memories, success, and happiness.
+        May this year be your best one yet!
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
